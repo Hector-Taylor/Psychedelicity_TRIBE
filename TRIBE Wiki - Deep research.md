@@ -259,6 +259,15 @@ The perturbation space should be broad enough to matter and constrained enough t
 
 The goal is not to generate every imaginable edit. The goal is to define a space of **graded, interpretable perturbation dimensions**.
 
+### Lower-priority exploratory families preserved from earlier drafts
+
+Two additional perturbation ideas appeared in earlier notes and may still be worth keeping as explicit second-tier options:
+
+- **temporal warping**: local speed changes, elastic timing distortions, or nonuniform temporal stretching
+- **semantic destabilization**: edits that weaken object identity or scene coherence without simply destroying low-level structure
+
+These are not the strongest first-pass families because they are harder to parameterize cleanly and carry higher out-of-distribution and interpretability risk. But they are still useful to remember as later-stage exploratory operators if the core perturbation atlas works.
+
 ---
 
 ## 12. Analysis strategy
@@ -437,7 +446,48 @@ We propose a collaborative project using **TRIBE v2**, an in-silico brain encodi
 
 ---
 
-## 21. Bottom line
+## 21. Preserved follow-up notes from earlier drafts
+
+Earlier drafts included a few practical ideas that are still useful even though they no longer need standalone documents.
+
+### Minimal behavioral follow-up
+
+If a small human follow-up is pursued after the in-silico phase, the cleanest design is to show a model-selected subset of clips and collect ratings on:
+
+- trippiness
+- perceptual instability
+- awe
+- salience / meaningfulness
+- self-boundary looseness
+- confusion
+- discomfort / nausea
+
+The important design constraint is to **separate discomfort from trippiness**, so crude or nauseating edits do not get misread as successful altered-perception probes.
+
+### Minimal neural follow-up
+
+Earlier drafts also preserved a realistic low-cost neural follow-up path:
+
+- **EEG** for spectral signatures, signal complexity, temporal variability, and occipital versus broader response differences
+- **fNIRS** as a lower-cost option for slower response-profile differences, especially if paired with repeated exposure blocks and behavioral ratings
+
+The mature framing is not “validate TRIBE as a psychedelic model.” It is: test whether **stimuli identified by the perturbation atlas as high-impact** also produce stronger empirical differentiation in humans.
+
+### Backup open-data route
+
+If a future workshop or reviewer context demands a stricter “existing open neural data only” framing, the main preserved backup route is **Cogitate open iEEG**.
+
+That route is not the preferred current project, but it remains a credible fallback because it offers:
+
+- a clearly open, BIDS-structured consciousness dataset
+- strong preregistration and FAIR-reuse language
+- a way to test whether perturbation-derived metrics explain variance in conscious visual processing signals without claiming the dataset contains psychedelic-like stimuli
+
+So the current choice is still **BOLD Moments + TRIBE** for the main perturbation-search project, but the Cogitate route remains worth remembering as a backup framing rather than a discarded dead end.
+
+---
+
+## 22. Bottom line
 
 The final project is strong because it is:
 - ambitious without being ridiculous
